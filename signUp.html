@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/static/main.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+    
+</head>
+<body>
+    <div class="bg-[#c4c4c4] rounded-3xl w-screen h-screen flex justify-center lg:justify-end">
+
+        <div class="bg-[#ffffff] h-screen max-w-5xl w-full md:w-[45%]">
+            <div class="mx-10 my-10">
+                <div>
+                    <h1 class="text-[#040404] montserrat text-3xl font-medium ">Sign Up</h1>
+                </div>
+                <div class="mt-5 flex items-center gap-2 md:gap-5">
+                    <h4 class="montserrat  text-[20px]">Continue With</h4>
+                    <a href="#"><img src="/static/Image_icons/social.png" alt="Google Icon" class="h-10 w-10"></a>
+                    <a href="#"><img src="/static/Image_icons/facebook.png" alt="Google Icon" class="h-10 w-10"></a>
+                    <h4 class="montserrat  text-[20px]">Or</h4>  
+                </div>
+                <div class="my-10">
+                    <form id="sign-up">
+                        <div class=" flex flex-col md:flex-row gap-5">
+                            <div class="w-full">
+                                <div class="form-group p-4 border border-slate-300 rounded-lg">
+                                    <label class="montserrat text-[#b6b9c4] font-medium" for="fname">First Name</label><br>
+                                    <input type="text" class="input montserrat text-[#3d4953] w-full"name="fname" id="first_name" placeholder="Mashok khan">
+                                </div>
+                            </div>
+                           <div class="w-full">
+                            <div class=" form-group p-4 border border-slate-300 rounded-lg">
+                                <label class="montserrat text-[#b6b9c4] font-medium"  for="lname">Last Name</label><br>
+                                <input type="text"  class="input montserrat text-[#0e0e0] w-full" name="lname" id="last_name" placeholder="Mashok khan">
+                            </div>
+                           </div>
+                    
+                        </div>
+                      
+                        <div class="form-group p-4 border border-slate-300 rounded-lg mt-5">
+                            <label class="montserrat text-[#b6b9c4] font-medium"  for="email">Email</label><br>
+                            <input  type="text"  class="input montserrat text-[#0e0e0id] w-full" name="email" placeholder="esabel123@gmail.com">
+                        </div>
+                        <div class="form-group p-4 border border-slate-300 rounded-lg mt-5">
+                            <label class="montserrat text-[#b6b9c4] font-medium" for="password">Password</label><br>
+                            <input type="password"  class="input montserrat  text-[#0e0e0] w-full" name="password" id="password" placeholder="1234@56">
+                        </div>
+                        <div class="form-group p-4 border border-slate-300 rounded-lg mt-5">
+                            <label class="montserrat text-[#b6b9c4] font-medium" for="confirm-password">Confirm Password</label><br>
+                            <input type="password"  class="input montserrat text-[#0e0e0] w-full" name="confirm-password" id="confirm-password" placeholder="1234@56">
+                        </div>
+                        <div class="form-group mt-5 pl-1 flex gap-1">
+                            <input type="checkbox" name="terms" id="terms"><br>
+                            <label class="input montserrat text-[14px] md:text-[16px]" for="terms">I agree with the <a class="montserrat text-[#f18562] font-medium text-[14px] md:text-[16px]" href="#">terms and conditions</a></label>
+                        </div>
+                        <button type="submit" class="mt-5 form-group p-4 bg-[#4dc591] w-full text-[#e7f7f0] text-xl rounded-2xl ">Sign Up</button>
+                        <div class="form-group mt-5 text-center">
+                            <p class="montserrat font-bold text-[#3a3b3a] text-[14px] md:text-[16px]">Already have an account? <a class="montserrat text-[#ff7e53] ml-1 text-[14px] md:text-[16px]" href="/signin.html">Log In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

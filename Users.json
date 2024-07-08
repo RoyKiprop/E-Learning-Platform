@@ -1,0 +1,38 @@
+{
+ "users": [
+ {
+ "id": 1,
+ "first_name": "John",
+ "last_name": "Doe",
+ "username": "johndoe",
+ "email": "johndoe@example.com",
+ "password": "Password123@",
+ "role": 0,
+ "plan": 1,
+ "category": "student",
+ "created": "2023-01-01",
+ "created_by": "Admin",
+ "modified": "2023-01-10",
+ "modified_by": "Admin",
+ "status": "active",
+ "onboarding_date": "2023-01-02"
+ },
+ {
+ "id": 2,
+ "first_name": "Jane",
+ "last_name": "Smith",
+ "username": "janesmith",
+ "email": "janesmith@example.com",
+ "password": "password456",
+ "role": 1,
+ "plan": 0,
+ "category": "professional",
+ "created": "2023-02-01",
+ "created_by": "Admin",
+ "modified": "2023-02-10",
+ "modified_by": "Admin",
+ "status": "active",
+ "onboarding_date": "2023-02-02"
+ }
+ ]
+}

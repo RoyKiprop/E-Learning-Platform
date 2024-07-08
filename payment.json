@@ -1,0 +1,115 @@
+{
+    "payments": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "course_code": "SE101",
+        "mode": "card",
+        "created": "2023-01-11",
+        "created_by": "Admin",
+        "modified": "2023-01-12",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 2,
+        "user_id": 2,
+        "course_code": "SE102",
+        "mode": "wallet",
+        "created": "2023-02-05",
+        "created_by": "Admin",
+        "modified": "2023-02-06",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 3,
+        "user_id": 3,
+        "course_code": "SE103",
+        "mode": "card",
+        "created": "2023-03-02",
+        "created_by": "Admin",
+        "modified": "2023-03-03",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 4,
+        "user_id": 4,
+        "course_code": "SE104",
+        "mode": "wallet",
+        "created": "2023-04-08",
+        "created_by": "Admin",
+        "modified": "2023-04-09",
+        "modified_by": "Admin",
+        "status": "failed"
+      },
+      {
+        "id": 5,
+        "user_id": 5,
+        "course_code": "SE105",
+        "mode": "card",
+        "created": "2023-05-12",
+        "created_by": "Admin",
+        "modified": "2023-05-13",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 6,
+        "user_id": 6,
+        "course_code": "UI101",
+        "mode": "wallet",
+        "created": "2023-06-14",
+        "created_by": "Admin",
+        "modified": "2023-06-15",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 7,
+        "user_id": 7,
+        "course_code": "WB101",
+        "mode": "card",
+        "created": "2023-07-20",
+        "created_by": "Admin",
+        "modified": "2023-07-21",
+        "modified_by": "Admin",
+        "status": "failed"
+      },
+      {
+        "id": 8,
+        "user_id": 8,
+        "course_code": "CC101",
+        "mode": "wallet",
+        "created": "2023-08-22",
+        "created_by": "Admin",
+        "modified": "2023-08-23",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 9,
+        "user_id": 9,
+        "course_code": "DS101",
+        "mode": "card",
+        "created": "2023-09-25",
+        "created_by": "Admin",
+        "modified": "2023-09-26",
+        "modified_by": "Admin",
+        "status": "success"
+      },
+      {
+        "id": 10,
+        "user_id": 10,
+        "course_code": "AI101",
+        "mode": "wallet",
+        "created": "2023-10-30",
+        "created_by": "Admin",
+        "modified": "2023-10-31",
+        "modified_by": "Admin",
+        "status": "failed"
+      }
+    ]
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/static/main.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <div class="bg-[#c4c4c4] rounded-3xl w-screen h-screen flex md:justify-end">
+
+        <div class="bg-[#ffffff] h-screen max-w-5xl w-full md:w-[45%]">
+            <div class="mx-10 my-32">
+                <div>
+                    <h1 class="text-[#040404] montserrat text-3xl font-bold ">Login</h1>
+                </div>
+                <div class="mt-5 flex items-center gap-2 md:gap-5">
+                    <h4 class="montserrat  text-[20px] font-medium">Continue With</h4>
+                    <a href="#"><img src="/static/Image_icons/social.png" alt="Google Icon" class="h-10 w-10"></a>
+                    <a href="#"><img src="/static/Image_icons/facebook.png" alt="Google Icon" class="h-10 w-10"></a>
+                    <h4 class="montserrat  text-[20px]">Or</h4>  
+                </div>
+                <div class="my-7">
+                    <form id="signIn">
+                      
+                        <div class="form-group p-4 border border-slate-300 rounded-lg mt-5">
+                            <label class="montserrat text-[#b6b9c4] font-medium" for="loginemail">Email</label><br>
+                            <input  type="text" name="email"  class="input montserrat text-[#0e0e0id] w-full" placeholder="esabel123@gmail.com">
+                        </div>
+                        <div class="form-group p-4 border border-slate-300 rounded-lg mt-5">
+                            <label class="montserrat text-[#b6b9c4] font-medium" for="loginpassword">Password</label><br>
+                            <input type="password" name="password"  class="input montserrat  text-[#0e0e0] w-full" id="password" placeholder="1234@56">
+                        </div>
+                        <div class="my-6 pl-1 flex gap-1">
+                            <label class="montserrat text-[14px] md:text-[16px] font-medium" for="terms">Forget password ? <a class="montserrat text-[#ffbba4] font-bold text-[14px] md:text-[16px]" href="#">Reset password</a></label>
+                        </div>
+                        <a href="/courses.html"><button type="submit" name="loginButton" class="p-4 bg-[#4dc591] w-full text-[#e7f7f0] text-xl rounded-2xl ">Login</button></a>
+                        <div class="my-7 text-center">
+                            <p class="montserrat font-medium text-[#3a3b3a] text-[14px] md:text-[16px]">Don't have an account? <a class="montserrat font-bold text-[#ffbba4] ml-1 text-[14px] md:text-[16px]" href="/signUp.html">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
