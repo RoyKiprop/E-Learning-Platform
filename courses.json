@@ -13,7 +13,10 @@
  "created_by": "Admin",
  "modified": "2023-02-15",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "completed"
  },
  {
  "id": 2,
@@ -28,7 +31,10 @@
  "created_by": "Admin",
  "modified": "2023-02-20",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "90%"
  },
  {
  "id": 3,
@@ -43,7 +49,10 @@
  "created_by": "Admin",
  "modified": "2023-02-22",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "completed"
  },
  {
  "id": 4,
@@ -58,7 +67,10 @@
  "created_by": "Admin",
  "modified": "2023-02-25",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "75%"
  },
  {
  "id": 5,
@@ -73,7 +85,10 @@
  "created_by": "Admin",
  "modified": "2023-03-01",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "50%"
  },
  {
  "id": 6,
@@ -88,7 +103,10 @@
  "created_by": "Admin",
  "modified": "2023-03-05",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "30%"
  },
  {
  "id": 7,
@@ -103,7 +121,10 @@
  "created_by": "Admin",
  "modified": "2023-03-10",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "10%"
   },
  {
  "id": 8,
@@ -118,7 +139,10 @@
  "created_by": "Admin",
  "modified": "2023-03-15",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "completed"
  },
  {
  "id": 9,
@@ -133,7 +157,10 @@
  "created_by": "Admin",
  "modified": "2023-03-20",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "45%"
  },
  {
  "id": 10,
@@ -148,7 +175,10 @@
   "created_by": "Admin",
  "modified": "2023-03-25",
  "modified_by": "Admin",
- "status": "published"
+ "status": "published",
+ "lesson_icon": "/static/Image_icons/book.png",
+ "hours_icon": "/static/Image_icons/clock.png",
+ "completion": "completed"
  }
  ]
 }

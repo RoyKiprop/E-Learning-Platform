@@ -59,7 +59,7 @@ const clearInputFields = () => {
 // User validation
 const isEmailValid = async (email) => {
     try {
-        const response = await fetch('/users.json');
+        const response = await fetch("/Users.json");
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         return data.users.find(user => user.email === email) || null;
@@ -81,6 +81,7 @@ const signUp = async (formData) => {
         return true; 
     }
 };
+
 
 const validateSignUp = async (e) => {
     e.preventDefault();
@@ -157,20 +158,57 @@ const login = async (email, pass) => {
 
 //course element
 const courseElement = (course) => {
+    let completeDiv;
+    if (course.completion.includes('%')){
+        completeDiv = `<div class="flex items-center gap-2 mt-2">
+                            <div class="h-[4px] w-[90%] bg-gray-300 rounded-md">
+                                <div class="h-full bg-[#64cc9f] rounded-md" style="width: ${course.completion}"></div>
+                            </div>
+                            <span class="montserrat text-sm font-medium text-[#191919]">${course.completion}</span>
+                        </div>`
+    }else {
+        completeDiv =`<div class="flex items-center gap-2">
+                        <img src="static/Image_icons/tick.png" class="h-[15px] w-[15px]">
+                        <p class="montserrat text-sm font-medium text-[#191919]">Completed</p>  
+                      </div>`
+    }
+
+    const domainImages = {
+        "Software Engineering": "/static/Image_icons/software.png",
+        "Data Science": "/static/Image_icons/data-science.png",
+        "Artificial Intelligence": "/static/Image_icons/robotic.png",
+        "Cloud Computing": "/static/Image_icons/cloud-computing.png",
+        "Web Development": "/static/Image_icons/magnifying.png",
+        "User Interface Design": "/static/Image_icons/UI.png"
+    };
+
+    const domainSrc = domainImages[course.domain]; 
+
+
     const element = document.createElement('div')
-    element.className = 'bg-white p-6 cursor-pointer course-card hover:border border-[#4dc591] focus:border border-[#4dc591]'
+    element.className = 'bg-white p-4 cursor-pointer course-card hover:border border-[#4dc591] focus:border border-[#4dc591]'
   
     element.insertAdjacentHTML(`beforeend`,`
           <a>
-           <h2 class="montserrat text-[#121413] text-xl font-bold mb-2">${course.title}</h2>
-          <p class="montserrat text-[#9295a3] mb-2">Course Code: ${course.course_code}</p>
-          <p class="montserrat text-[#9295a3] mb-2">Domain: ${course.domain}</p>
-          <p class="montserrat text-[#9295a3] mb-2">Instructor: ${course.instructor}</p>
-          <div class="flex gap-4 items-center mt-4">
-              <span class="montserrat text-[#4dc591]">${course.lessons} Lessons</span>
-              <span class="montserrat text-[#4dc591]">${course.hours} Hours</span>
-              <span class="montserrat text-[#4dc591]">${course.enrollments} Enrollments</span>
+          <img class="h-[40px] w-[40px] mb-1" src=${domainSrc}>
+           <h2 class="montserrat text-[#040404] text-xl font-normal mb-2">${course.title}</h2>
+          <div class="flex items-center gap-2 mt-1 ml-0">
+            <div class="h-9 w-9 bg-gray-300 rounded-full"></div>
+            <p class="montserrat text-[#9295a3]">${course.instructor}</p>
           </div>
+          
+          
+          <div class="flex gap-4 items-center ml-1 mt-3 mb-4">
+            <div class="flex gap-2 items-center">
+                <img class="h-4 w-4" src=${course.lesson_icon}>
+                <span class="montserrat text-[#9295a3]">${course.lessons} Lessons</span>
+            </div>
+            <div class="flex gap-2 items-center">
+                <img class="h-5 w-5"  src=${course.hours_icon}>
+                <span class="montserrat text-[#9295a3]">${course.hours} Hours</span>
+            </div>         
+          </div>
+           ${completeDiv} 
           </a> 
          
           `)
@@ -231,7 +269,8 @@ closeModal.addEventListener('click', () => {
 //successful purchase
 proceedButton.addEventListener('click', () => {
     purchaseModal.classList.add('hidden')
-    purchaseSuccess.classList.remove('hidden')
+    alert("Congratulations! You have successfully enrolled to this course")
+    // purchaseSuccess.classList.remove('hidden')
 })
 
 closePopUp.addEventListener('click', ()=> purchaseSuccess.classList.add('hidden') )
